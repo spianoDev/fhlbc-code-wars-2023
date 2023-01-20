@@ -13,3 +13,6 @@ print(greet_name)
 greeting_name_list = ['Hello again', 'Charlie']
 another_greet_name = ' '.join(greeting_name_list)
 print(another_greet_name)
+
+another_join = '***'.join(greeting_name_list)
+print(another_join)
