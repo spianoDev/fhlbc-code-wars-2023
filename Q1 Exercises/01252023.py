@@ -27,6 +27,23 @@ elif food == 'bacon' or food == 'steak':
 else:
     print(f'Your choice in {food} is not food. YUCK!!')
 
+## Another way to do this is to create a dictionary of the options ##
 
+food_dict = {
+    'apple': 'fruit',
+    'grape': 'fruit',
+    'bacon': 'meat',
+    'steak': 'meat',
+    'worm': 'yuck',
+    'dirt': 'yuck'
+}
+
+## Then reference a function that retrieves the appropriate response from that dictionary ##
+
+def food_classification(random_food):
+    print(food_dict.get(food))
+    return food_dict.get(food)
+
+food_classification(food)
 
 # YOUR CODE GOES HERE ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
