@@ -1,0 +1,50 @@
+# Calling in Sick
+# In this exercise you will be given a few variables that will be set randomly to Boolean values (True  or False ):
+#
+# actually_sick  - when you legit have the flu!
+# kinda_sick  - you're feeling under the weather, and it's enough to treat yourself with a day off if you can spare it
+# hate_your_job  - work sucks, I know...
+# You're also given a random number of sick_days between 0 and 10.
+#
+# Finally, there is a variable called calling_in_sick that you must set to
+# True  or False  based on the following
+# scenarios:
+#
+# Set to True if:
+#
+# you're actually_sick and you have sick_days remaining
+# you're kinda_sick and hate_your_job and you have sick_days remaining
+# Otherwise, set to False.
+#
+
+# The tests check that the value of calling_in_sick  is correct based on the conditions specified above.
+
+# NO TOUCHING ======================================
+
+from random import choice, randint
+
+# randomly assigns values to these four variables
+actually_sick = choice([True, False])
+kinda_sick = choice([True, False])
+hate_your_job = choice([True, False])
+sick_days = randint(0, 10)
+
+# NO TOUCHING ======================================
+
+
+calling_in_sick = None  # set this to True or False with Boolean Logic and Conditionals!
+
+# YOUR CODE GOES HERE vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+print(f'actually_sick = {actually_sick}, kinda_sick = {kinda_sick}, hate_your_job = {hate_your_job}, '
+      f'and have {sick_days} sick_days remaining.')
+
+if actually_sick is True and sick_days > 0:
+    calling_in_sick = True
+elif kinda_sick is True and hate_your_job is True and sick_days > 0:
+    calling_in_sick = True
+else:
+    calling_in_sick = False
+
+print(calling_in_sick)
+
+# YOUR CODE GOES HERE ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
