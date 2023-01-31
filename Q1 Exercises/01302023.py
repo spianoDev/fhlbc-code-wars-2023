@@ -11,25 +11,17 @@
 import math
 
 def mango(quantity, price):
-    if quantity % 3 == 0 and quantity >= 6:
-        total_to_buy = quantity - (quantity/3)
-        print(int(total_to_buy))
-        return total_to_buy * price
-    elif quantity % 3 == 1 and quantity >= 5:
-        total_to_buy = quantity - (quantity/3) + 1
-        print(int(total_to_buy))
-        return total_to_buy * price
-    elif quantity % 3 == 2 and quantity >= 4:
-        total_to_buy = quantity - (quantity/3) + 1
-        print(int(total_to_buy))
-        return total_to_buy * price
-    elif quantity == 3:
-        return 2 * price
+    discount = math.floor(quantity/3)
+    if discount >= 1:
+        print(int(quantity - discount) * price)
+        return int(quantity - discount) * price
     else:
+        print(quantity * price)
         return quantity * price
 
 ## TESTS ##
 # mango(2, 3) # => 6
 # mango(3, 3) # => 6
 # mango(9, 5) # => 30
-mango(12, 5)
+# mango(12, 5)
+mango(6206, 171) # => 707598
