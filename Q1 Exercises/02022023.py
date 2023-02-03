@@ -31,43 +31,42 @@ fruit_code = [
     (8, 'pineapple'),
     (9, 'apple'),
     (10, 'pineapple'),
-    (11,'cucumber'),
-    (12,'pineapple'),
-    (13,'cucumber'),
-    (14,'orange'),
-    (15,'grape'),
-    (16,'orange'),
-    (17,'grape'),
-    (18,'apple'),
-    (19,'grape'),
-    (20,'cherry'),
-    (21,'pear'),
-    (22,'cherry'),
-    (23,'pear'),
-    (24,'kiwi'),
-    (25,'banana'),
-    (26,'kiwi'),
-    (27,'apple'),
-    (28,'melon'),
-    (29,'banana'),
-    (30,'melon'),
-    (31,'pineapple'),
-    (32,'melon'),
-    (33,'pineapple'),
-    (34,'cucumber'),
-    (35,'orange'),
-    (36,'apple'),
-    (37,'orange'),
-    (38,'grape'),
-    (39,'orange'),
-    (40,'grape'),
-    (41,'cherry'),
-    (42,'pear'),
+    (11, 'cucumber'),
+    (12, 'pineapple'),
+    (13, 'cucumber'),
+    (14, 'orange'),
+    (15, 'grape'),
+    (16, 'orange'),
+    (17, 'grape'),
+    (18, 'apple'),
+    (19, 'grape'),
+    (20, 'cherry'),
+    (21, 'pear'),
+    (22, 'cherry'),
+    (23, 'pear'),
+    (24, 'kiwi'),
+    (25, 'banana'),
+    (26, 'kiwi'),
+    (27, 'apple'),
+    (28, 'melon'),
+    (29, 'banana'),
+    (30, 'melon'),
+    (31, 'pineapple'),
+    (32, 'melon'),
+    (33, 'pineapple'),
+    (34, 'cucumber'),
+    (35, 'orange'),
+    (36, 'apple'),
+    (37, 'orange'),
+    (38, 'grape'),
+    (39, 'orange'),
+    (40, 'grape'),
+    (41, 'cherry'),
+    (42, 'pear'),
 ]
 
 
 def subtract_sum(n):
-
     while n > 42:
         sum = 0
         for digit in str(n):
@@ -79,7 +78,8 @@ def subtract_sum(n):
         n = new_n
 
     print(fruit_code[n - 1][1])
-    # return fruit_code[n - 1][1]
+    return fruit_code[n - 1][1]
+
 
 ## So, I realized after putting in a variety of numbers that this will always result in
 ## a multiple of 9 and the answer will always be apple the above is how I arrived at that conclusion.
