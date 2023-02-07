@@ -1,6 +1,9 @@
 # Reboot of FHLBC Code Warriors 
+![FHLBC Logo](fhlbc-logo.png)
 ## Group of bank employees learing to code and discuss programming topics
 
+![Udemy Logo](udemy-logo.png)
+![CodeWars Logo](codewars-logo.png)
 ### Description: *The purpose of this project is to learn, practice, and discuss Python programming concepts.*
 
 ---
@@ -27,4 +30,4 @@ def repeat_str(repeat, string):
     return string * repeat
 ```
 
-
+![CodeWars Badge](https://www.codewars.com/users/spianoDev/badges/large)
