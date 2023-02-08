@@ -22,7 +22,10 @@
 4. **Udemy Python Bootcamp Course** *Optional*
     - We will be referencing exercises from [this course](https://fhlbc.udemy.com/course/the-modern-python3-bootcamp/learn/lecture/8658338#overview) so less experienced members of our group can also learn how 
       to code using Python.
----
+5. **CodeWars Account** *Optional*
+    - We will occasionally pause from the coursework to reference some coding challenges in [CodeWars](https://www.codewars.com/).
+    - Link to your GitHub for best reach and visibility
+    - The bank has a 'Clan' you can join by entering `FHLBC` in your [account settings](https://www.codewars.com/users/edit).
 
 ```python
 # Example from an exercise
