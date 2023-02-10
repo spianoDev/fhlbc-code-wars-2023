@@ -32,6 +32,7 @@
 def repeat_str(repeat, string):
     return string * repeat
 ```
+![ Python animation](https://media.giphy.com/media/coxQHKASG60HrHtvkt/giphy.gif) 
 #### Motivation Ideas
 - [ ] Join a coding challenge through social media like `#100DaysOfCode`
 - [ ] Explore local groups or meetups like [WomenWhoCode](https://www.womenwhocode.com/chicago) or [Chicago Python 
@@ -39,4 +40,6 @@ def repeat_str(repeat, string):
 - [ ] Join [Discord](https://www.makeuseof.com/discord-servers-for-web-developers/) or [Slack](https://chicago-tech.slack.com/) coding groups
 - [ ] Start a conversation in our **FHLBC** *Code Warriors* MS. Teams channel
 
+#### Now let's go build something!
+![Let's go warriors!](https://media.giphy.com/media/CdK3zJMxLee6lXtoXN/giphy.gif)
 ![CodeWars Badge](https://www.codewars.com/users/spianoDev/badges/large)
