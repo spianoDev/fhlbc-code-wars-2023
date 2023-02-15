@@ -42,7 +42,7 @@ print("SHOOT!")
 #
 # rock_paper_scissors(player1, player2)
 
-## Refactor 2: add error handling and correct extra spaces or typos ##
+## Refactor 2: add error handling ##
 import sys
 
 winning_choices = {
