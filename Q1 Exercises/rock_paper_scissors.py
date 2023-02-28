@@ -1,12 +1,12 @@
 ## Rock Paper Scissors Mini-Project ##
-print("...rock...")
-print("...paper...")
-print("...scissors...")
-
-player1 = input("(enter Player 1's choice): ")
-# player2 = input("(enter Player 2's choice): ")
-
-print("SHOOT!")
+# print("...rock...")
+# print("...paper...")
+# print("...scissors...")
+#
+# player1 = input("(enter Player 1's choice): ")
+# # player2 = input("(enter Player 2's choice): ")
+#
+# print("SHOOT!")
 
 ## Basic Version ##
 # if player1 == player2:
@@ -43,13 +43,7 @@ print("SHOOT!")
 # rock_paper_scissors(player1, player2)
 
 ## Refactor 2: add error handling ##
-import sys
 
-winning_choices = {
-    'paper': 'rock',
-    'rock': 'scissors',
-    'scissors': 'paper'
-}
 
 # def rock_paper_scissors(player1_choice, player2_choice):
 #     if player1_choice.lower() not in winning_choices:
@@ -70,15 +64,26 @@ winning_choices = {
 
 # rock_paper_scissors(player1, player2)
 from random import randint
+import sys
 
-random_num = randint(0, 2)
-print(random_num)
-winners = list(winning_choices)
-computer = winners[random_num]
-print(computer)
+winning_choices = {
+    'paper': 'rock',
+    'rock': 'scissors',
+    'scissors': 'paper'
+}
+
+player1_wins = 0
+computer_wins = 0
+winning_score = 3
 
 
-def rock_paper_scissors(player1_choice, computer_choice):
+def rock_paper_scissors(computer_choice):
+    global player1_wins, computer_wins
+    print("...rock...")
+    print("...paper...")
+    print("...scissors...")
+    player1_choice = input("(enter Player 1's choice): ")
+    print("SHOOT!")
     if player1_choice.lower() not in winning_choices:
         sys.exit(f'Player 1 entered an incorrect response of {player1_choice}. Please try again')
     else:
@@ -88,10 +93,22 @@ def rock_paper_scissors(player1_choice, computer_choice):
                 return
             elif player1_choice.lower() == choice[0] and computer_choice == choice[1]:
                 print(f'Player 1 wins with {player1_choice} over {computer_choice}')
-                return player1_choice
+                player1_wins += 1
+                print(player1_wins)
+                return player1_choice, player1_wins
             elif computer_choice == choice[0] and player1_choice.lower() == choice[1]:
                 print(f'Computer wins with {computer_choice} over {player1_choice}')
-                return computer_choice
+                computer_wins += 1
+                print(computer_wins)
+                return computer_choice, computer_wins
 
 
-rock_paper_scissors(player1, computer)
+while player1_wins < winning_score and computer_wins < winning_score:
+    random_num = randint(0, 2)
+    print(random_num)
+    winners = list(winning_choices)
+    computer = winners[random_num]
+    print(computer)
+    rock_paper_scissors(computer)
+    print(f"Player Score: {player1_wins} Computer Score: {computer_wins}")
+
