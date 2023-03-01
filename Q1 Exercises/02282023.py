@@ -32,3 +32,15 @@ for emoji in emojis:
     while len(emojis) >= i:
         print(emojis[i-1] * i)
         i += 1
+
+# Use a while loop to play the copy game.
+# Have the first person input a statement, then print a copy
+# repeat until the user inputs 'stop copying me'
+
+copy_cat = input('Hey there, what\'s up?? ')
+
+while copy_cat.lower() != 'stop copying me':
+    copy_cat = input(copy_cat + '\n')
+
+print('Fine... you win!')
+
