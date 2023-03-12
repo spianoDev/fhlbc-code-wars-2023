@@ -10,7 +10,10 @@ random_number = random.randint(1, 10)  # numbers 1 - 10
 
 def guessing_game(guess):
     while True:
-        if int(guess) > random_number:
+        if not guess.isdigit():
+            print(f'{guess} is not a whole number between 1 and 10. Try again...')
+            guess = input("Guess a number between 1 and 10: ")
+        elif int(guess) > random_number:
             print(f'{guess} is too high... try again')
             guess = input("Guess another, lower number between 1 and 10: ")
         elif int(guess) < random_number:
