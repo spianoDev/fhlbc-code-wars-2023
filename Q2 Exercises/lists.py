@@ -22,4 +22,24 @@ people[5] = people[5].capitalize()
 
 print(people)
 
-#
+# Exercise 16: List Iteration
+# Combine all strings in list and make them uppercase
+
+sounds = ['super', 'cali', 'fragil', 'istic', 'expi', 'ali', 'docious']
+result = []
+for sound in sounds:
+    result.append(sound.upper())
+print(''.join(result))
+
+# Exercise 17: Lists Basics
+# Create a list called 'instructors' and add 'Colt', 'Blue', 'Lisa' to the list
+
+instructors = []
+instructors.append('Colt')
+instructors.append('Blue')
+instructors.append('Lisa')
+
+print(instructors)
+
+# It would be better to just initialize this list example with these three names
+instructor_lst = ['Colt', 'Blue', 'Lisa']
