@@ -43,3 +43,18 @@ print(instructors)
 
 # It would be better to just initialize this list example with these three names
 instructor_lst = ['Colt', 'Blue', 'Lisa']
+
+# Exercise 18: List Methods
+# Use the above instructor_lst and perform the following methods
+
+# Remove the last value in the list
+instructor_lst.pop()
+print(instructor_lst)
+
+# Remove the first value in the list
+instructor_lst.pop(0)
+print(instructor_lst)
+
+# Add the string 'Done' to the beginning of the list
+instructor_lst.insert(0, 'Done')
+print(instructor_lst)
