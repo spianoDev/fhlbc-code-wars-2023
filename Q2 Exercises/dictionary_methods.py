@@ -1,7 +1,7 @@
 # Exercise 30 #
 # I've provided you with a start dictionary called inventory.
 #
-inventory = {'croissant': 19, 'bagel': 4, 'muffin': 8, 'cake': 1} #DON'T CHANGE THIS LINE!
+inventory = {'croissant': 19, 'bagel': 4, 'muffin': 8, 'cake': 1}  # DON'T CHANGE THIS LINE!
 #
 # Follow the instructions found in the comments:
 #
@@ -69,3 +69,25 @@ ascii_nums = list(range(65, 91))
 ascii_dict = dict((i, chr(i)) for i in ascii_nums)
 print(ascii_dict)
 
+# Exercise 35 #
+# 1 - Create a variable called numbers which is a tuple with the values 1, 2, 3 and 4 inside.
+num_range = range(1, 5)
+numbers = tuple(num_range)
+print(numbers)
+# 2 - Create a variable called value which is a tuple with the value 1 inside.
+single_range = range(1, 2)
+value = tuple(single_range)
+
+# 3 - Given the following variable:
+values = [10, 20, 30]
+
+# Create a variable called static_values which is the result of the values variable converted to a tuple
+static_values = tuple(values)
+
+# 4 - Given the following variable
+
+stuff = [1, 3, 1, 5, 2, 5, 1, 2, 5]
+
+# Create a variable called unique_stuff which is a set of only the unique values in the stuff list
+unique_stuff = set(stuff)
+print(unique_stuff)
