@@ -19,3 +19,19 @@ def speak_pig(animal):
 speak_pig('pig')
 speak_pig('cow')
 
+# Exercise 38 #
+# Define a function called generate_evens
+# It should return a list of even numbers between 1 and 50(not including 50)
+
+def generate_evens(num1, num2):
+    all_nums = range(num1, num2)
+    even_nums = []
+    for num in all_nums:
+        if num % 2 == 0:
+            even_nums.append(num)
+        else:
+            pass
+    print(even_nums)
+    return even_nums
+
+generate_evens(1, 50)
