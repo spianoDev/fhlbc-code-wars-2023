@@ -44,3 +44,28 @@ for info in person:
     person_info.update({info[0]: info[1]})
 
 print(person_info)
+
+# Exercise 33 #
+# Create a dictionary with the key as a vowel in the alphabet and the value as 0.
+# Your dictionary should look like this {'a': 0, 'e': 0, 'i': 0, 'o': 0, 'u': 0}.
+vowels = ['a', 'e', 'i', 'o', 'u']
+vowel_values = dict.fromkeys(vowels, 0)
+print(vowel_values)
+
+# Exercise 34 #
+# Every character has an ASCII code (basically, a number that represents it).
+# Python has a function called chr() that will return a string if you provide the corresponding integer ASCII code.
+# For example:
+#
+# chr(65)  will return  'A'
+# chr(66)  will return  'B'
+# chr(90)  will return  'Z'
+#
+# Your task is to create dictionary that maps ASCII keys to their corresponding letters.
+# Use a dictionary comprehension and chr() . Save the result to the answer variable.
+# You only need to care about capital letters (65-90).
+#
+ascii_nums = list(range(65, 91))
+ascii_dict = dict((i, chr(i)) for i in ascii_nums)
+print(ascii_dict)
+
