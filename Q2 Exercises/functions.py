@@ -50,3 +50,29 @@ def yell(phrase):
 
 print(yell('hi code warriors'))
 
+# Exercise 40 #
+# Fix This Function!
+# The pre-written count_dollar_signs  function is broken.
+# It's supposed to return the number of $ characters in a given string.
+# For example: count_dollar_signs("$uper $ize")  should return 2 .
+# But for some reason, the function always returns either 0 or 1. What's going on?
+
+# original function #
+# def count_dollar_signs(word):
+#     count = 0
+#     for char in word:
+#         if char == '$':
+#             count += 1
+#         print(count)
+#         return count
+
+# Without adding any new lines of code, make count_dollar_signs work as intended
+# Need to move the return statement back to the level of the loop or after the first instance, it will return 1
+def count_dollar_signs(word):
+    count = 0
+    for char in word:
+        if char == '$':
+            count += 1
+    print(count)
+    return count
+count_dollar_signs("$uper $ize")
