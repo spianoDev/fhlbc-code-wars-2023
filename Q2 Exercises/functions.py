@@ -6,7 +6,9 @@
 def make_noise():
     print('THE CROWD GOES WILD')
 
+
 make_noise()
+
 
 # Exercise 37 #
 # Write a function called speak_pig that returns 'oink'.  Yup, that's it.
@@ -16,8 +18,10 @@ make_noise()
 def speak_pig(animal):
     return print('oink') if animal == 'pig' else print('No pig in sight...')
 
+
 speak_pig('pig')
 speak_pig('cow')
+
 
 # Exercise 38 #
 # Define a function called generate_evens
@@ -34,7 +38,9 @@ def generate_evens(num1, num2):
     print(even_nums)
     return even_nums
 
+
 generate_evens(1, 50)
+
 
 # Exercise 39 #
 # Implement a function yell  which accepts a single string argument.
@@ -46,9 +52,11 @@ generate_evens(1, 50)
 # yell("leave me alone")   # "LEAVE ME ALONE!"
 
 def yell(phrase):
-    return phrase.upper()+'!'
+    return phrase.upper() + '!'
+
 
 print(yell('hi code warriors'))
+
 
 # Exercise 40 #
 # Fix This Function!
@@ -75,4 +83,43 @@ def count_dollar_signs(word):
             count += 1
     print(count)
     return count
+
+
 count_dollar_signs("$uper $ize")
+
+
+# Exercise 41 #
+# Write a function called speak  that accepts a single parameter, animal.
+#
+# If animal is "pig", it should return "oink".
+# If animal is "duck", it should return "quack".
+# If animal is "cat", it should return "meow"
+# If animal is "dog", it should return "woof"
+# If animal is anything else, it should return "?"
+# If no animal is specified, it should default to "dog"
+#
+#
+# speak()  # "woof"
+# speak("pig")  # "oink"
+# speak("duck")  # "quack"
+# speak("cat")  # "meow"
+# speak("dog")  # "woof"
+# speak("banana")  # "?"
+
+def speak(animal=None):
+    if animal == 'pig':
+        return 'oink'
+    elif animal == 'duck':
+        return 'quack'
+    elif animal == 'cat':
+        return 'meow'
+    elif animal == 'dog':
+        return 'woof'
+    elif animal:
+        return '?'
+    else:
+        return 'woof'
+
+
+print(speak())
+print(speak('orange'))
