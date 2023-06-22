@@ -35,3 +35,18 @@ def generate_evens(num1, num2):
     return even_nums
 
 generate_evens(1, 50)
+
+# Exercise 39 #
+# Implement a function yell  which accepts a single string argument.
+# It should return(not print) an uppercased version of the string with an exclamation point aded at the end.
+# For example:
+#
+# yell("go away")   # "GO AWAY!"
+#
+# yell("leave me alone")   # "LEAVE ME ALONE!"
+
+def yell(phrase):
+    return phrase.upper()+'!'
+
+print(yell('hi code warriors'))
+
